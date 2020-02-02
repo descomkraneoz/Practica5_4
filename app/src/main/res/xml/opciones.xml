@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Datos Personales">
+        <EditTextPreference
+            android:dialogTitle="Introduce Nombre"
+            android:key="nombre"
+            android:summary="Con que nombre quieres que nos dirijamos a ti"
+            android:title="Cuál es tu nombre" />
+        <EditTextPreference
+            android:dialogTitle="dd/mm/yyyy"
+            android:key="fechaCumpleaños"
+            android:summary="Introduce tu fecha de cumpleaños dd/mm/aaaa"
+            android:title="Fecha Cumpleaños" />
+        <ListPreference
+            android:dialogTitle="Eres..."
+            android:entries="@array/sexo"
+            android:entryValues="@array/codsexo"
+            android:key="sexo"
+            android:summary="Eres un/una..."
+            android:title="Eres ..." />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Configuración programa">
+        <CheckBoxPreference
+            android:key="sdcard"
+            android:summary="Si desea guardar las fotos en la memoria SD o la memoria interna"
+            android:title="Desea guardar los datos en la memoria SD o la memoria interna" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
